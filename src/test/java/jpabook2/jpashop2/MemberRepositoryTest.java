@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class MemberRepositoryTest {
 
-    @Autowired MemberRepository memberRepository;
+    /*@Autowired MemberRepository memberRepository;
 
     @Test
     @Transactional
@@ -35,5 +35,5 @@ public class MemberRepositoryTest {
         assertThat(findMember.getUserName()).isEqualTo(member.getUserName());
         assertThat(findMember).isEqualTo(member);
 
-    }
+    }*/
 }
