@@ -83,7 +83,7 @@ public class Order {
      * 주문 취소
      * */
     public void cancel(){
-        if (delivery.getStatus().equals(DeliveryStatus.COMP)){
+        if (delivery.getStatus() != null && delivery.getStatus().equals(DeliveryStatus.COMP)){
             throw new IllegalStateException("이미 배송완료된 상품은 취소가 불가능합니다.");
         }
 
