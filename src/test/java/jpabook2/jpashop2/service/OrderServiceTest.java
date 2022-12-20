@@ -65,7 +65,7 @@ public class OrderServiceTest {
 
         // when
         int orderCount = 12;
-        // 여기서 주문재고 예외처리가 안됨 확인해야함.
+        // 여기서 주문재고 예외처리가 안됨 확인해야함nn.
         orderService.order(member.getId(), item.getId(), orderCount);
 
         // then
