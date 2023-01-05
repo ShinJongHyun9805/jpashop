@@ -29,7 +29,7 @@ public class OrderRepository {
                 "AND m.name LIKE :name", Order.class)
                 .setParameter("status", orderSearch.getOrderStatus())
                 .setParameter("name", orderSearch.getMemberName())
-                .setMaxResults(1000)    // TOP(1000)
+                .setMaxResults(1000)    // TOP(1000)11
                 .getResultList();
     }
 }
