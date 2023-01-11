@@ -16,6 +16,6 @@ public class MemberForm {
 
     private String street;
 
-    private String zipcode;
+    private String zipcode; //
 
 }
