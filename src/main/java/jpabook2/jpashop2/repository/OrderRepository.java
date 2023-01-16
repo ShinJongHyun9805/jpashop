@@ -23,9 +23,10 @@ public class OrderRepository {
     }
 
     // -> Querydsl로 변환(복잡하거나, 동적 SQL용)
+    // TODO : 여기 createQuery 때문에 select가 제대로 안됨.
     public List<Order> findAll(OrderSearch orderSearch){
         return em.createQuery("SELECT o FROM Order o JOIN o.member m" +
-                "WHERE o.status = :status " +
+                " WHERE o.status = :status " +
                 "AND m.name LIKE :name", Order.class)
                 .setParameter("status", orderSearch.getOrderStatus())
                 .setParameter("name", orderSearch.getMemberName())
